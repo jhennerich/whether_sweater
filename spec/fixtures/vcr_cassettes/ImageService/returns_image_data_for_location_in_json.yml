@@ -1,0 +1,182 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=oH90Drbvwi52RCXqbbP0aZRrXVipBz7ICdEpTde3lKE&page=1&per_page=1&query=snowy%20denver%20weather
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1105'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - max-age=86400,stale-if-error=3600,stale-while-revalidate=1562815882706215845487465263450294796205802731792790975092872924632196227613507516762835672079270536892874197795335915729505187887684226190710161574765038292053552557698597162139783973260581412045851175656848422339458769071283545615116533760
+      X-Unsplash-Version:
+      - v1
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      Link:
+      - <https://api.unsplash.com/search/photos?client_id=oH90Drbvwi52RCXqbbP0aZRrXVipBz7ICdEpTde3lKE&page=10000&per_page=1&query=snowy+denver+weather>;
+        rel="last", <https://api.unsplash.com/search/photos?client_id=oH90Drbvwi52RCXqbbP0aZRrXVipBz7ICdEpTde3lKE&page=2&per_page=1&query=snowy+denver+weather>;
+        rel="next"
+      X-Total:
+      - '10000'
+      X-Per-Page:
+      - '1'
+      Content-Language:
+      - en
+      Etag:
+      - W/"3d4356485e49a87b5630a1671e287a96"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '45'
+      X-Request-Id:
+      - 0ea99e9d-90d9-4574-a4ac-b2fc8969546e
+      X-Runtime:
+      - '0.117755'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 11 Jun 2022 23:48:55 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kjyo7100025-IAD, cache-den8246-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1654991336.586544,VS0,VE176
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":10000,"total_pages":10000,"results":[{"id":"Ym5oKbreCCs","created_at":"2020-01-10T00:48:16-05:00","updated_at":"2022-06-11T05:10:32-04:00","promoted_at":null,"width":5964,"height":3976,"color":"#264026","blur_hash":"LPA-n%xuWBof.TtRofof9Fozt7kC","description":"Rocky
+        Mountain Rolling Plains","alt_description":"green field under blue sky","urls":{"raw":"https://images.unsplash.com/photo-1578635073897-3807ceb9a88d?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93eSUyMGRlbnZlciUyMHdlYXRoZXJ8ZW58MHx8fHwxNjU0OTkxMzM1\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1578635073897-3807ceb9a88d?crop=entropy\u0026cs=tinysrgb\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93eSUyMGRlbnZlciUyMHdlYXRoZXJ8ZW58MHx8fHwxNjU0OTkxMzM1\u0026ixlib=rb-1.2.1\u0026q=80","regular":"https://images.unsplash.com/photo-1578635073897-3807ceb9a88d?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93eSUyMGRlbnZlciUyMHdlYXRoZXJ8ZW58MHx8fHwxNjU0OTkxMzM1\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1578635073897-3807ceb9a88d?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93eSUyMGRlbnZlciUyMHdlYXRoZXJ8ZW58MHx8fHwxNjU0OTkxMzM1\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1578635073897-3807ceb9a88d?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93eSUyMGRlbnZlciUyMHdlYXRoZXJ8ZW58MHx8fHwxNjU0OTkxMzM1\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1578635073897-3807ceb9a88d"},"links":{"self":"https://api.unsplash.com/photos/Ym5oKbreCCs","html":"https://unsplash.com/photos/Ym5oKbreCCs","download":"https://unsplash.com/photos/Ym5oKbreCCs/download?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93eSUyMGRlbnZlciUyMHdlYXRoZXJ8ZW58MHx8fHwxNjU0OTkxMzM1","download_location":"https://api.unsplash.com/photos/Ym5oKbreCCs/download?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93eSUyMGRlbnZlciUyMHdlYXRoZXJ8ZW58MHx8fHwxNjU0OTkxMzM1"},"categories":[],"likes":26,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"user":{"id":"t2RB-3lbgSk","updated_at":"2022-06-11T13:17:36-04:00","username":"rdehamer","name":"Ryan
+        De Hamer","first_name":"Ryan","last_name":"De Hamer","twitter_username":null,"portfolio_url":"http://www.dehamermedia.com","bio":"Denver
+        -\u003e Anywhere\r\nMy images are collected all around the country working
+        with brands, athletes and fitness influencers","location":null,"links":{"self":"https://api.unsplash.com/users/rdehamer","html":"https://unsplash.com/es/@rdehamer","photos":"https://api.unsplash.com/users/rdehamer/photos","likes":"https://api.unsplash.com/users/rdehamer/likes","portfolio":"https://api.unsplash.com/users/rdehamer/portfolio","following":"https://api.unsplash.com/users/rdehamer/following","followers":"https://api.unsplash.com/users/rdehamer/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1577912636161-6a3ada136470image?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=32\u0026h=32","medium":"https://images.unsplash.com/profile-1577912636161-6a3ada136470image?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=64\u0026h=64","large":"https://images.unsplash.com/profile-1577912636161-6a3ada136470image?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=128\u0026h=128"},"instagram_username":"Ryan_dehamer","total_collections":6,"total_likes":0,"total_photos":69,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"Ryan_dehamer","portfolio_url":"http://www.dehamermedia.com","twitter_username":null,"paypal_email":null}},"tags":[]}]}'
+  recorded_at: Sat, 11 Jun 2022 23:48:55 GMT
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=oH90Drbvwi52RCXqbbP0aZRrXVipBz7ICdEpTde3lKE&page=1&per_page=1&query=snow%20denver%20weather
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1023'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - max-age=86400,stale-if-error=3600,stale-while-revalidate=400080865972791256444791107443275467828685499338954489623775468705842234269057924291285932052293257444575794635605994426753328099247161904821801363139849802765709454770840873507784697154708841483737900968153196118901444882248587677469832642560
+      X-Unsplash-Version:
+      - v1
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      Link:
+      - <https://api.unsplash.com/search/photos?client_id=oH90Drbvwi52RCXqbbP0aZRrXVipBz7ICdEpTde3lKE&page=10000&per_page=1&query=snow+denver+weather>;
+        rel="last", <https://api.unsplash.com/search/photos?client_id=oH90Drbvwi52RCXqbbP0aZRrXVipBz7ICdEpTde3lKE&page=2&per_page=1&query=snow+denver+weather>;
+        rel="next"
+      X-Total:
+      - '10000'
+      X-Per-Page:
+      - '1'
+      Content-Language:
+      - en
+      Etag:
+      - W/"834506db4d9cf7277643bccca781869b"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '43'
+      X-Request-Id:
+      - 1b0d9ef2-ee42-4f8a-9947-84f7cf630676
+      X-Runtime:
+      - '0.039422'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 11 Jun 2022 23:54:58 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kcgs7200137-IAD, cache-den8283-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1654991698.913663,VS0,VE90
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":10000,"total_pages":10000,"results":[{"id":"GwGd5YpGlJk","created_at":"2021-03-19T00:13:59-04:00","updated_at":"2022-06-11T16:17:58-04:00","promoted_at":null,"width":3013,"height":4519,"color":"#8c8c8c","blur_hash":"LBDcUJo#00s.4.MxMxV@?vRjV@Rj","description":null,"alt_description":"red
+        traffic light on red","urls":{"raw":"https://images.unsplash.com/photo-1616127053758-72b3c071a2e7?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93JTIwZGVudmVyJTIwd2VhdGhlcnxlbnwwfHx8fDE2NTQ5OTE2OTc\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1616127053758-72b3c071a2e7?crop=entropy\u0026cs=tinysrgb\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93JTIwZGVudmVyJTIwd2VhdGhlcnxlbnwwfHx8fDE2NTQ5OTE2OTc\u0026ixlib=rb-1.2.1\u0026q=80","regular":"https://images.unsplash.com/photo-1616127053758-72b3c071a2e7?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93JTIwZGVudmVyJTIwd2VhdGhlcnxlbnwwfHx8fDE2NTQ5OTE2OTc\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1616127053758-72b3c071a2e7?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93JTIwZGVudmVyJTIwd2VhdGhlcnxlbnwwfHx8fDE2NTQ5OTE2OTc\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1616127053758-72b3c071a2e7?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93JTIwZGVudmVyJTIwd2VhdGhlcnxlbnwwfHx8fDE2NTQ5OTE2OTc\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1616127053758-72b3c071a2e7"},"links":{"self":"https://api.unsplash.com/photos/GwGd5YpGlJk","html":"https://unsplash.com/photos/GwGd5YpGlJk","download":"https://unsplash.com/photos/GwGd5YpGlJk/download?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93JTIwZGVudmVyJTIwd2VhdGhlcnxlbnwwfHx8fDE2NTQ5OTE2OTc","download_location":"https://api.unsplash.com/photos/GwGd5YpGlJk/download?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxzbm93JTIwZGVudmVyJTIwd2VhdGhlcnxlbnwwfHx8fDE2NTQ5OTE2OTc"},"categories":[],"likes":86,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"user":{"id":"B1TepQxEajg","updated_at":"2022-06-11T19:17:48-04:00","username":"onthesearchforpineapples","name":"Colin
+        Lloyd","first_name":"Colin","last_name":"Lloyd","twitter_username":"otsfpineapples","portfolio_url":"https://cplloyd95.wixsite.com/otsfp","bio":null,"location":"Denver,
+        Colorado","links":{"self":"https://api.unsplash.com/users/onthesearchforpineapples","html":"https://unsplash.com/@onthesearchforpineapples","photos":"https://api.unsplash.com/users/onthesearchforpineapples/photos","likes":"https://api.unsplash.com/users/onthesearchforpineapples/likes","portfolio":"https://api.unsplash.com/users/onthesearchforpineapples/portfolio","following":"https://api.unsplash.com/users/onthesearchforpineapples/following","followers":"https://api.unsplash.com/users/onthesearchforpineapples/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1616687073587-63950dc1079cimage?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=32\u0026h=32","medium":"https://images.unsplash.com/profile-1616687073587-63950dc1079cimage?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=64\u0026h=64","large":"https://images.unsplash.com/profile-1616687073587-63950dc1079cimage?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=128\u0026h=128"},"instagram_username":"onthesearchforpineapples","total_collections":0,"total_likes":93,"total_photos":1008,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"onthesearchforpineapples","portfolio_url":"https://cplloyd95.wixsite.com/otsfp","twitter_username":"otsfpineapples","paypal_email":null}},"tags":[]}]}'
+  recorded_at: Sat, 11 Jun 2022 23:54:57 GMT
+recorded_with: VCR 6.1.0
