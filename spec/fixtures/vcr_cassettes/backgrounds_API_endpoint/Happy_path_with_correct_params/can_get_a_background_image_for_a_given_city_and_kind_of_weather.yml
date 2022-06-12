@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=unsplash_api_key&page=1&per_page=1&query=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1224'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - max-age=86400,stale-if-error=3600,stale-while-revalidate=6554924908098211945591457504350625264905183221169430357995937279276519166264245031588428710744772729971929819309768612687926527578065500648600393533683299168513383706965456871551544478182749658869561769462221965212081272950760860507665738015703040
+      X-Unsplash-Version:
+      - v1
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      Link:
+      - <https://api.unsplash.com/search/photos?client_id=unsplash_api_key&page=5415&per_page=1&query=denver%2Cco>;
+        rel="last", <https://api.unsplash.com/search/photos?client_id=unsplash_api_key&page=2&per_page=1&query=denver%2Cco>;
+        rel="next"
+      X-Total:
+      - '5415'
+      X-Per-Page:
+      - '1'
+      Content-Language:
+      - en
+      Etag:
+      - W/"d456015e784affc1ec2f03de4e2f3895"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Request-Id:
+      - ed6d67a5-c30d-47bc-8a72-8bce98191c70
+      X-Runtime:
+      - '0.066487'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 12 Jun 2022 15:08:48 GMT
+      Age:
+      - '53227'
+      X-Served-By:
+      - cache-iad-kiad7000155-IAD, cache-den8265-DEN
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1655046528.413304,VS0,VE1
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":5415,"total_pages":5415,"results":[{"id":"zSm5JPgNeuc","created_at":"2021-08-16T21:22:29-04:00","updated_at":"2022-06-11T12:21:56-04:00","promoted_at":"2022-02-24T20:24:02-05:00","width":4392,"height":6588,"color":"#d9c0c0","blur_hash":"LaJ@:y%2%fWB~q%2IoaxE1f7M{WV","description":"Boho
+        Girl\n\nModel : @peanutphysique","alt_description":"woman in white tank top
+        sitting on brown wooden chair","urls":{"raw":"https://images.unsplash.com/photo-1629163330223-c183571735a1?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2NTQ5OTMzMDE\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1629163330223-c183571735a1?crop=entropy\u0026cs=tinysrgb\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2NTQ5OTMzMDE\u0026ixlib=rb-1.2.1\u0026q=80","regular":"https://images.unsplash.com/photo-1629163330223-c183571735a1?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2NTQ5OTMzMDE\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1629163330223-c183571735a1?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2NTQ5OTMzMDE\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1629163330223-c183571735a1?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2NTQ5OTMzMDE\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1629163330223-c183571735a1"},"links":{"self":"https://api.unsplash.com/photos/zSm5JPgNeuc","html":"https://unsplash.com/photos/zSm5JPgNeuc","download":"https://unsplash.com/photos/zSm5JPgNeuc/download?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2NTQ5OTMzMDE","download_location":"https://api.unsplash.com/photos/zSm5JPgNeuc/download?ixid=MnwzMzY5NDN8MHwxfHNlYXJjaHwxfHxkZW52ZXIlMkNjb3xlbnwwfHx8fDE2NTQ5OTMzMDE"},"categories":[],"likes":89,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"fashion":{"status":"approved","approved_on":"2022-05-26T05:35:25-04:00"},"spirituality":{"status":"approved","approved_on":"2022-02-25T12:59:43-05:00"}},"user":{"id":"FZ9entlYhv0","updated_at":"2022-06-08T20:10:22-04:00","username":"tayloradaugherty","name":"Taylor
+        Daugherty","first_name":"Taylor","last_name":"Daugherty","twitter_username":null,"portfolio_url":"http://taylordaugherty.com","bio":"IG:
+        Tayloradaugherty\r\n Buy My Presets! https://td-digital-assets.sellfy.store/p/lightroom-fitness-presets/","location":"Saint
+        Petersburg, Florida","links":{"self":"https://api.unsplash.com/users/tayloradaugherty","html":"https://unsplash.com/es/@tayloradaugherty","photos":"https://api.unsplash.com/users/tayloradaugherty/photos","likes":"https://api.unsplash.com/users/tayloradaugherty/likes","portfolio":"https://api.unsplash.com/users/tayloradaugherty/portfolio","following":"https://api.unsplash.com/users/tayloradaugherty/following","followers":"https://api.unsplash.com/users/tayloradaugherty/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1629165748557-ebeca78a15c3image?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=32\u0026h=32","medium":"https://images.unsplash.com/profile-1629165748557-ebeca78a15c3image?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=64\u0026h=64","large":"https://images.unsplash.com/profile-1629165748557-ebeca78a15c3image?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=128\u0026h=128"},"instagram_username":"tayloradaugherty","total_collections":0,"total_likes":0,"total_photos":69,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"tayloradaugherty","portfolio_url":"http://taylordaugherty.com","twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"denver"},{"type":"search","title":"co"},{"type":"search","title":"usa"}]}]}'
+  recorded_at: Sun, 12 Jun 2022 15:08:48 GMT
+recorded_with: VCR 6.1.0
