@@ -75,5 +75,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.configure_rspec_metadata!
   config.filter_sensitive_data("mapquest_api_key") { ENV['mapquest_api_key'] }
+  config.filter_sensitive_data("openweather_api_key") { ENV['openweather_appid'] }
+  config.filter_sensitive_data("unsplash_api_key") { ENV['unsplash_api_key'] }
   config.default_cassette_options = { :record => :new_episodes }
 end
