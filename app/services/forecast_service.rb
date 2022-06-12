@@ -1,6 +1,6 @@
 class ForecastService
   def self.conn
-    Faraday.new('https://api.openweathermap.org/data/2.5/onecall?',
+    Faraday.new('https://api.openweathermap.org',
       headers: { 'Content-type' => 'application/json'})
   end
 
