@@ -5,7 +5,6 @@ describe ImageService do
     location = 'snow denver weather'
 
     result = ImageService.get_image_info(location)
-    binding.pry
     expect(result).to be_a(Hash)
     expect(result).to have_key(:results)
 
