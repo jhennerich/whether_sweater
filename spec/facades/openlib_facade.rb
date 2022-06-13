@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 describe 'OpenlibFacade' do
-  it 'returns book_data for a location', :vcr do
+  it 'returns book_data for a location and quantity of books', :vcr do
 
-    bookinfo = OpenlibFacade.get_book_info('denver,co')
+    bookinfo = OpenlibFacade.get_book_info('denver,co', 5)
 #    expect(bookinfo).to be_a(Book)
 #    expect(bookinfo.)
     ###
