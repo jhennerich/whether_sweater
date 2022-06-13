@@ -4,7 +4,6 @@ describe 'OpenlibFacade' do
   it 'returns book_data for a location', :vcr do
 
     bookinfo = OpenlibFacade.get_book_info('denver,co')
-    binding.pry
 #    expect(bookinfo).to be_a(Book)
 #    expect(bookinfo.)
     ###

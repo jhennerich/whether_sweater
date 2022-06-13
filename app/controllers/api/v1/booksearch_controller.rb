@@ -1,9 +1,9 @@
-class Api::V1::ForecastController < ApplicationController
+class Api::V1::BooksearchController < ApplicationController
   before_action :check_params
 
   def index
     return if check_params
-    books = ForecastFacade.forecast_by_coords(params[:location])
-    render json: ForecastSerializer.new(forecast)
+    books = OpenlibFacade.get_book_info(params[:location], params[:quantity])
+    render json: BooksSerializer.new(books)
   end
 end
