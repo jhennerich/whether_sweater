@@ -6,6 +6,9 @@ class Api::V1::BooksearchController < ApplicationController
 
     forecast = ForecastFacade.forecast_by_coords(params[:location])
     books = OpenlibFacade.get_book_info(params[:location], params[:quantity])
-    render json: BooksSerializer.new(forecast, books[0])
+    combine = ForecastBook.new(forecast.current_weather,books[0])
+#    render json: BooksSerializer.new(forecast)
+    render json: BooksSerializer.new(combine)
+#    render json: BooksSerializer.new(forecast, books[0])
   end
 end
