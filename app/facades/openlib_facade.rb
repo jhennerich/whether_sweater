@@ -8,6 +8,6 @@ class OpenlibFacade
     books = book_data[:docs][0..quantity.to_i].map do |data|
       Book.new(data)
     end
-    return [books, total_books_found]
+#    return [books, total_books_found]
   end
 end
