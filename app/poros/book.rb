@@ -1,8 +1,8 @@
 class Book
-  attr_reader :book
+  attr_reader :books
 
   def initialize(data)
-    @book = book_hash(data)
+    @books = book_hash(data)
   end
 
   def book_hash(data)
