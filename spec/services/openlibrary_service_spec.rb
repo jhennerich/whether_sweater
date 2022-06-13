@@ -15,8 +15,9 @@ describe OpenlibService do
       expect(response[:docs][0][:isbn]).to be_a(Array)
       expect(response[:docs][0]).to have_key(:title)
       expect(response[:docs][0][:title]).to be_a(String)
-
-
+      expect(response[:docs][0]).to have_key(:publisher)
+      expect(response[:docs][0][:publisher]).to be_a(Array)
+      expect(response[:docs][0][:publisher][0]).to be_a(String)
     end
   end
 end
