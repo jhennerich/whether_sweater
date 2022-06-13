@@ -10,7 +10,7 @@ class OpenlibFacade
       Book.new(data)
     end
 
-    
-    return [books, total_books_found]
+    forecast = ForecastFacade.forecast_by_coords(location)
+    combine = ForecastBook.new(forecast.current_weather,total_books_found,books)
   end
 end

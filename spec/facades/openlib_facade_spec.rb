@@ -6,13 +6,13 @@ describe 'OpenlibFacade' do
     quantity = '5'
     bookinfo = OpenlibFacade.get_book_info(location, quantity)
 
-    expect(bookinfo[0].count).to eq(quantity.to_i)
+    expect(bookinfo.books.count).to eq(quantity.to_i)
 
-    bookinfo[0].each do |book|
+    bookinfo.books.each do |book|
       expect(book).to be_a(Book)
     end
 
-    expect(bookinfo[1]).to be_a(Integer)
+    expect(bookinfo.total_books_found).to be_a(Integer)
 #    expect(bookinfo).to be_a(Book)
 #    expect(bookinfo.)
     ###
