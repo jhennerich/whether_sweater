@@ -10,6 +10,7 @@ describe 'Book-Search API' do
       expect(response.status).to eq(200)
 
       result = JSON.parse(response.body, symbolize_names: true)
+      binding.pry
       expect(result).to be_a(Hash)
     end
   end
