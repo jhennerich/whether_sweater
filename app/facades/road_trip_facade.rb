@@ -1,7 +1,7 @@
 class RoadTripFacade
   def self.travel_time(origin, destination)
-    weather_info = ''
     road_trip_time = MapquestFacade.travel_time(origin, destination)
+    weather_data = nil
 
     if road_trip_time != 'impossible route'
       coords = MapquestFacade.get_coords_by_location(destination)

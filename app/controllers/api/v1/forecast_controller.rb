@@ -6,4 +6,9 @@ class Api::V1::ForecastController < ApplicationController
     forecast = ForecastFacade.forecast_by_coords(params[:location])
     render json: ForecastSerializer.new(forecast)
   end
+
+  private
+    def check_params
+      render json: { 'error': 'Missing or Incorrect query' }, status: 400 if !params[:location] || params[:location] == ''
+    end
 end

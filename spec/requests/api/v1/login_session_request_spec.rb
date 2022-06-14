@@ -41,4 +41,59 @@ describe 'Sessions API endpoint' do
 
     end
   end
+  describe 'sad path' do
+    it 'returns a 400 for incorrect password' do
+      User.create!(email: 'john@email.com',
+                   password: 'password',
+                   password_confirmation: 'password',
+                   api_key: SecureRandom.hex)
+
+      headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+
+      body = {
+        'email': 'john@email.com',
+        'password': 'passwd'
+      }
+
+      post '/api/v1/sessions', headers: headers, params: JSON.generate(body)
+
+      expect(response.status).to eq(401)
+
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed).to be_a(Hash)
+      expect(parsed).to have_key(:error)
+      expect(parsed[:error]).to eq('could not authenticate credentials')
+    end
+
+    it 'returns 400 for incorrect email' do
+      User.create!(email: 'john@email.com',
+                   password: 'password',
+                   password_confirmation: 'password',
+                   api_key: SecureRandom.hex)
+
+      headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+
+      body = {
+        'email': 'foo@email.com',
+        'password': 'password'
+      }
+
+      post '/api/v1/sessions', headers: headers, params: JSON.generate(body)
+
+      expect(response.status).to eq(401)
+
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed).to be_a(Hash)
+      expect(parsed).to have_key(:error)
+      expect(parsed[:error]).to eq('could not authenticate credentials')
+    end
+  end
 end
