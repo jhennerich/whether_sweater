@@ -14,4 +14,12 @@ class MapquestService
       response = conn.get("/geocoding/v1/address?location=#{location}")
       parse_json(response)[:results][0][:locations][0][:latLng]
   end
+
+  def self.travel_time(from, to)
+    response = conn.get('/directions/v2/route') do |required_params|
+      required_params.params['from'] = from
+      required_params.params['to'] = to
+    end
+    parse_json(response)[:route][:formattedTime]
+  end
 end
