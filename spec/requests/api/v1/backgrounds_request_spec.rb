@@ -36,6 +36,11 @@ describe 'backgrounds API endpoint' do
     it "can't get a background image without params", :vcr do
       get '/api/v1/backgrounds'
       expect(response.status).to eq(400)
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed).to be_a(Hash)
+      expect(parsed).to have_key(:error)
+      expect(parsed[:error]).to eq('Missing or Incorrect query')
     end
   end
 end
