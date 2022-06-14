@@ -19,7 +19,7 @@ describe 'Users API endpoint' do
       expect(response.status).to eq(201)
 
       parsed_data = JSON.parse(response.body, symbolize_names: true)
-#      {:data=>{:id=>"4", :type=>"users", :attributes=>{:email=>"john@email.com", :api_key=>"2a3c71d211a0ca2368fddf0cc24ff332"}}}
+#      {:data=>{:id=>"4", :type=>"users", :attributes=>{:email=>"john@email.com", :api_key=>""}}}
 
       expect(parsed_data).to be_a(Hash)
       expect(parsed_data).to have_key(:data)
