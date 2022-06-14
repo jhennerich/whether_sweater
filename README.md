@@ -30,7 +30,7 @@
   <li><a href="#skills-developed">Skills Developed</a>
   <li><a href="#built-with">Built With</a>
   <li><a href="#setup-instructions">Setup Instructions</a></li>
-  <li><a href="#endpoints">Endpoint Documentation</a></li>
+  <li><a href="#endpoint-documentation">Endpoint Documentation</a></li>
   <li><a href="#author-and-contact-information">Author and Contact Information</a></li>
 </ol>
 
