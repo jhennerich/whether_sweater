@@ -14,7 +14,14 @@ describe MapquestService do
 
     it 'can get the time to drive between two places', :vcr do
       response = MapquestService.travel_time('Denver, CO', 'Pueblo, CO')
-      expect(response).to be_a(String)
+#      response = MapquestService.travel_time('Denver, CO', 'HI')
+      expect(response).to be_a(Hash)
+      expect(response).to have_key(:info)
+      expect(response[:info]).to have_key(:statuscode)
+      expect(response[:info][:statuscode]).to eq(0)
+      expect(response).to have_key(:route)
+      expect(response[:route]).to have_key(:formattedTime)
+      expect(response[:route][:formattedTime]).to be_a(String)
     end
   end
 end
