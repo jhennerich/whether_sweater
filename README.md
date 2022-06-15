@@ -85,7 +85,7 @@ To download a local copy please follow the below steps.
     ```
     bundle exec figaro install
     ```
-5. Obtain and install required API keys in applicaiont.yml
+5. Obtain and install required API keys in application.yml
   * [MapQuest's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)
   `application.yml value mapquest_api_key`
   * [OpenWeather One Call API](https://openweathermap.org/api/one-call-api)
