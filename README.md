@@ -224,8 +224,8 @@ To download a local copy please follow the below steps.
             ]
         }
     }
-}
-```
+  }
+  ```
 
 #### GET /api/v1/backgrounds - image for location
 * `GET http://localhost:3000/api/v1/backgrounds?location=denver,co`
@@ -246,8 +246,8 @@ To download a local copy please follow the below steps.
             }
         }
     }
-}
-```
+  }
+  ```
 
 #### POST /api/v1/users - create new user.
 * `POST http://localhost:3000/api/v1/users`
@@ -270,8 +270,8 @@ To download a local copy please follow the below steps.
             "api_key": "8ed75a909699057ddd8f4d4c12a1e110"
         }
     }
-}
-```
+  }
+  ```
 
 #### POST /api/v1/sessions - user authentication
 * `POST http://localhost:3000/api/v1/sessions`
@@ -323,8 +323,8 @@ To download a local copy please follow the below steps.
             }
         }
     }
-}
-```
+  }
+  ```
 
 ## Author and Contact Information
 - **John Hennerich** - *Turing Student* - [GitHub Profile](https://github.com/jhennerich) - [LinkedIn](https://www.linkedin.com/in/john-hennerich)
